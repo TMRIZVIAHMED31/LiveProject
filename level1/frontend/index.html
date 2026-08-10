@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codveda | Product Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Codveda Product Manager</h1>
+    <p>Level 1 — HTML, CSS &amp; vanilla JavaScript talking to a REST API</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2 id="form-title">Add New Product</h2>
+      <form id="product-form">
+        <input type="hidden" id="product-id" />
+        <label>
+          Name
+          <input type="text" id="name" required placeholder="e.g. Wireless Mouse" />
+        </label>
+        <label>
+          Price ($)
+          <input type="number" id="price" step="0.01" min="0" required />
+        </label>
+        <label>
+          Stock
+          <input type="number" id="stock" min="0" value="0" />
+        </label>
+        <label>
+          Description
+          <textarea id="description" rows="2" placeholder="optional"></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" id="submit-btn">Add Product</button>
+          <button type="button" id="cancel-btn" class="hidden">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Products</h2>
+      <div id="status"></div>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
