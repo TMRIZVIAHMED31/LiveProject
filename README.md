@@ -1,12 +1,19 @@
+<<<<<<< HEAD
 # Codveda Full-Stack Internship — Level 1, 2 & 3 Guideline
+=======
+# Codveda Full-Stack Internship — Level 1 & Level 2 Guideline
+>>>>>>> ada299dd797f3eec7e4e5832a656f5ec07f6cf90
 
 This package contains a working project structure and starter code for:
 
 - **Level 1 (Basic)** — Dev environment, REST API, vanilla JS frontend
 - **Level 2 (Intermediate)** — React frontend, JWT auth, MongoDB integration
+<<<<<<< HEAD
 - **Level 3 (Advanced)** — Deployable MERN app, real-time chat with Socket.io, GraphQL API
 
 See `SETUP_GUIDE.md` for the full walkthrough. `level3/GUIDE.md` covers Level 3 specifically.
+=======
+>>>>>>> ada299dd797f3eec7e4e5832a656f5ec07f6cf90
 
 > Reminder: per the task list, you only need to complete **2 of the 3 tasks per level**.
 > This project happens to cover all of them so you can pick whichever two fit your time best.
