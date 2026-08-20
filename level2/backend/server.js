@@ -18,12 +18,12 @@ app.use(express.json());
 app.use(helmet());
 app.use(compression());
 
-app.use(
-  cors({
-    origin: "https://live-project-am3i.vercel.app",
-    credentials: true,
-  })
-);
+const cors = require("cors");
+
+app.use(cors({
+  origin: "https://live-project-1qjenew.vercel.app",
+  credentials: true,
+}));
 
 if (process.env.NODE_ENV !== "production") {
   app.use(morgan("dev"));
