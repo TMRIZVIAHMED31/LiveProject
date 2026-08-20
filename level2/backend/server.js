@@ -8,6 +8,7 @@ const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
 const productRoutes = require("./routes/productRoutes");
 
+
 connectDB();
 
 const app = express();
@@ -16,6 +17,13 @@ app.use(cors());
 app.use(express.json());
 app.use(helmet());
 app.use(compression());
+
+app.use(
+  cors({
+    origin: "https://live-project-am3i.vercel.app",
+    credentials: true,
+  })
+);
 
 if (process.env.NODE_ENV !== "production") {
   app.use(morgan("dev"));
