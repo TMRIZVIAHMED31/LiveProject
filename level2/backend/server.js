@@ -21,7 +21,7 @@ app.use(compression());
 const cors = require("cors");
 
 app.use(cors({
-  origin: "https://live-project-1qjenew.vercel.app",
+  origin: "https://live-project-git-main-rizvi5.vercel.app",
   credentials: true,
 }));
 
